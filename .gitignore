@@ -1,0 +1,8 @@
+__pycache__/
+.ipynb_checkpoints/
+.venv/
+venv/
+tmp/
+informes/
+data/bank-full.csv
+data/bank_saneado.csv
