@@ -26,7 +26,7 @@ for name, fname in [('Body','DejaVuSans.ttf'),('Bold','DejaVuSans-Bold.ttf'),('M
     pdfmetrics.registerFont(TTFont(name, str(FONT/fname)))
 styles=getSampleStyleSheet()
 styles.add(ParagraphStyle(name='TitleX',fontName='Bold',fontSize=23,leading=29,textColor=colors.HexColor('#13374b'),spaceAfter=16))
-styles.add(ParagraphStyle(name='SubX',fontName='Bold',fontSize=13,leading=18,textColor=colors.HexColor('#15786e'),spaceBefore=14,spaceAfter=8))
+styles.add(ParagraphStyle(name='SubX',fontName='Bold',fontSize=13,leading=18,textColor=colors.HexColor('#15786e'),spaceBefore=14,spaceAfter=8,keepWithNext=True))
 styles.add(ParagraphStyle(name='BodyX',fontName='Body',fontSize=9.4,leading=14,spaceAfter=9))
 styles.add(ParagraphStyle(name='SmallX',fontName='Body',fontSize=7.7,leading=11,spaceAfter=7))
 styles.add(ParagraphStyle(name='CodeX',fontName='Mono',fontSize=6.9,leading=10,spaceAfter=9,textColor=colors.HexColor('#20313e')))
